@@ -1,0 +1,133 @@
+﻿<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Microsoft.Help.SelfBranded" content="true" />
+    <meta name="Language" content="en-us" />
+    <meta name="Microsoft.Help.Locale" content="en-us" />
+    <meta name="Microsoft.Help.TopicLocale" content="en-us" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../styles/branding.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" />
+    <script type="text/javascript" src="../scripts/branding.js"></script>
+    <title>IIB</title>
+    <meta name="Title" content="IIB" />
+    <meta name="Microsoft.Help.Id" content="R:Project_Docs" />
+    <meta name="Microsoft.Help.ContentType" content="Reference" />
+    <meta name="container" content="(Default Namespace)" />
+    <meta name="file" content="R_Project_Docs" />
+    <meta name="guid" content="R_Project_Docs" />
+    <meta name="Description" content="Description The IIB.ICDD framework provides functions to open, create, validate, edit, export containers defined by ISO 21597-1:2020." />
+    <link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" />
+    <script type="text/javascript" src="../scripts/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../scripts/branding-Website.js"></script>
+    <script type="text/javascript" src="../scripts/clipboard.min.js"></script>
+  </head>
+  <body onload="SetDefaultLanguage('cs');">
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <div id="PageHeader" class="pageHeader">IIB ICDD framework documentation<form id="SearchForm" method="get" action="#" onsubmit="TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div>
+    <div class="pageBody">
+      <div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/R_Project_Docs.htm" title="IIB ICDD framework documentation" tocid="roottoc">IIB ICDD framework documentation</a></div><div class="toclevel1 current" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/R_Project_Docs.htm" title="IIB" tocid="R_Project_Docs">IIB</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/N_IIB_ICDD.htm" title="IIB.ICDD" tocid="N_IIB_ICDD">IIB.ICDD</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/N_IIB_ICDD_Handling.htm" title="IIB.ICDD.Handling" tocid="N_IIB_ICDD_Handling">IIB.ICDD.Handling</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/N_IIB_ICDD_Logging.htm" title="IIB.ICDD.Logging" tocid="N_IIB_ICDD_Logging">IIB.ICDD.Logging</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/G_IIB_ICDD_Model.htm" title="IIB.ICDD.Model Namespaces" tocid="G_IIB_ICDD_Model">IIB.ICDD.Model Namespaces</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/G_IIB_ICDD_Parsing.htm" title="IIB.ICDD.Parsing Namespaces" tocid="G_IIB_ICDD_Parsing">IIB.ICDD.Parsing Namespaces</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/N_IIB_ICDD_Querying.htm" title="IIB.ICDD.Querying" tocid="N_IIB_ICDD_Querying">IIB.ICDD.Querying</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/N_IIB_ICDD_Validation.htm" title="IIB.ICDD.Validation" tocid="N_IIB_ICDD_Validation">IIB.ICDD.Validation</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div id="TopicContent" class="topicContent">
+        <table class="titleTable">
+          <tr>
+            <td class="titleColumn">
+              <h1>IIB</h1>
+            </td>
+          </tr>
+        </table>
+        <div class="summary">
+          <h3>Description</h3>
+The <a href="https://github.com/philhag/IIB.ICDD">IIB.ICDD framework</a> provides functions to open, create, validate, edit, export containers defined by <a href="https://www.iso.org/standard/74389.html" target="blank">ISO 21597-1:2020</a>. In ISO 21597-1, a specification is given for a generic container format that stores documents using various formats and structures, along with a means of linking otherwise disconnected data within those documents (including individual parts). These documents can have any syntax and semantics. The container format includes a header file and optional link files that define relationships by including references to the documents, or to elements within them. The header file uniquely identifies the container and its contractual or collaborative intention. This information is defined using the RDF, RDFS and OWL semantic web standards.
+
+<h3>Contact</h3><p dir="auto"><strong>Philipp Hagedorn</strong><br /><em>Research Assistant, <a href="https://www.inf.bi.ruhr-uni-bochum.de/iib/index.html.en" target="blank">Chair of Computing in Engineering</a>, Ruhr-University Bochum, Germany</em><br /><a href="https://github.com/philhag">GitHub</a> | <a href="https://www.researchgate.net/profile/Philipp-Hagedorn" rel="nofollow">ResearchGate</a> | <a href="https://orcid.org/0000-0002-6249-243X" rel="nofollow">ORCiD</a> | <a href="https://www.linkedin.com/in/hagedorn-philipp/" rel="nofollow">LinkedIn</a></p></div>
+        <div class="collapsibleAreaRegion">
+          <span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDABA')" onkeypress="SectionExpandCollapse_CheckKey('IDABA', event)" tabindex="0">
+            <img id="IDABAToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Namespaces</span>
+        </div>
+        <div id="IDABASection" class="collapsibleSection">
+          <table id="namespaceList" class="members">
+            <tr>
+              <th>Namespace</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <a href="N_IIB_ICDD.htm">IIB.ICDD</a>
+              </td>
+              <td>
+        The root namespace contains reader, builder and writer methods for ICDD containers
+      </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="N_IIB_ICDD_Handling.htm">IIB.ICDD.Handling</a>
+              </td>
+              <td>
+          Contains helper classes and helper methods
+        </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="N_IIB_ICDD_Logging.htm">IIB.ICDD.Logging</a>
+              </td>
+              <td>
+        Contains classes and methods for logging exceptions end errors
+      </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="G_IIB_ICDD_Model.htm">IIB.ICDD.Model</a>
+              </td>
+              <td>
+        Contains all models to represent an ICDD container according to ISO 29157
+      </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="G_IIB_ICDD_Parsing.htm">IIB.ICDD.Parsing</a>
+              </td>
+              <td>
+      Contains classes and methods for reading and writing from RDF graphs
+    </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="N_IIB_ICDD_Querying.htm">IIB.ICDD.Querying</a>
+              </td>
+              <td>
+    Contains classes and methods for querying containers with SPARQL
+  </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="N_IIB_ICDD_Validation.htm">IIB.ICDD.Validation</a>
+              </td>
+              <td>
+    Contains classes and methods for validating ICDD according conformance with the standard and using SHACL
+  </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="PageFooter" class="pageFooter">
+      <a href="https://github.com/philhag/IIB.ICDD" target="blank">GitHub Repository</a>
+      <p>
+        <a href="https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en" target="_blank" rel="noopener noreferrer">(c) 2022 Philipp Hagedorn, Ruhr-Universität Bochum</a>
+      </p>
+      <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:philipp.hagedorn-n6v%40rub.de?Subject=IIB%20ICDD%20framework%20documentation">philipp.hagedorn-n6v@rub.de</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script></div>
+  </body>
+<script type="text/javascript">
+<!--
+    var tocNav = document.getElementById("tocNav");
+    var anchor = tocNav.children[0].children[0];
+    Toggle(anchor);
+    tocNav.children[0].className += " current";
+-->
+</script>
+</html>
