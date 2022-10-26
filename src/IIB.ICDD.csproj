@@ -22,7 +22,7 @@
     <PackageReference Include="dotNetRDF" Version="2.7.5" />
     <PackageReference Include="LibGit2Sharp" Version="0.27.0-preview-0175" />
     <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
-    <PackageReference Include="r2rml4net" Version="0.7.1" />
+    <PackageReference Include="r2rml4net" Version="0.8.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.4" />
   </ItemGroup>
 

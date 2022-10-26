@@ -2,12 +2,13 @@
 <package>
   <metadata>
     <id>ICDDToolkitCore</id>
-    <version>0.9.9.0</version>
+    <version>0.9.10.0</version>
     <title>IIB.ICDD</title>
     <authors>phagedorn</authors>
 	  <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <projectUrl>https://philhag.github.io/IIB.ICDD/</projectUrl>
+    <repository type="git" url="https://github.com/philhag/IIB.ICDD.git" branch="main" />
     <icon>icon.jpg</icon>
     <description>The IIB.ICDD framework provides functions to open, create, validate, edit, export containers defined by ISO 21597-1:2020.</description>
     <releaseNotes>
@@ -27,8 +28,10 @@
 		  <dependency id="LibGit2Sharp" version="0.27.0-preview-0175" />
 		  <dependency id="Microsoft.Win32.Registry" version="5.0.0" />
 	  </dependencies>
+    <readme>docs\readme.md</readme>
   </metadata>
     <files>
       <file src="icon.jpg" target="" />
+      <file src="..\README.md" target="docs\" />
   </files>
 </package>
