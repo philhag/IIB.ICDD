@@ -14,7 +14,7 @@
     <Title>IIB.ICDD</Title>
   </PropertyGroup>
 	<PropertyGroup>
-    <Version>0.9.7</Version>
+    <Version>0.9.9</Version>
     <NuspecFile>IIB.ICDD.nuspec</NuspecFile>
 	</PropertyGroup>
 
