@@ -1,0 +1,29 @@
+{
+    "Linkset": "https://standards.iso.org/iso/21597/-1/ed-1/en/Container#Linkset",
+    "versionId": "https://standards.iso.org/iso/21597/-1/ed-1/en/Container#versionId",
+    "versionDescription": "https://standards.iso.org/iso/21597/-1/ed-1/en/Container#versionDescription",
+    "priorVersion": {
+        "@id": "https://standards.iso.org/iso/21597/-1/ed-1/en/Container#priorVersion",
+        "@type": "@id"
+    },
+    "creationDate": {
+        "@id": "https://standards.iso.org/iso/21597/-1/ed-1/en/Container#creationDate",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "modificationDate": {
+        "@id": "https://standards.iso.org/iso/21597/-1/ed-1/en/Container#modificationDate",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "isModified": {
+        "@id": "https://standards.iso.org/iso/21597/-1/ed-1/en/Container#isModified",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "modifiedBy": {
+        "@id": "https://standards.iso.org/iso/21597/-1/ed-1/en/Container#modifiedBy",
+        "@type": "@id"
+    },
+    "createdBy": {
+        "@id": "https://standards.iso.org/iso/21597/-1/ed-1/en/Container#createdBy",
+        "@type": "@id"
+    }
+}

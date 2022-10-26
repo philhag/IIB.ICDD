@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>ICDDToolkitCore</id>
+    <version>0.9.9.0</version>
+    <title>IIB.ICDD</title>
+    <authors>phagedorn</authors>
+	  <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://git.inf.bi.ruhr-uni-bochum.de/icdd/core/library</projectUrl>
+    <icon>icon.jpg</icon>
+    <description>The IIB.ICDD framework provides functions to open, create, validate, edit, export containers defined by ISO 21597-1:2020.</description>
+    <releaseNotes>
+		Changelog:
+		- Features: Added local git versioning for containers
+		- Features: Added RdfsReasoner for SHACL and SPARQL operations on containers
+		- Features: Added support for external relational database triple conversion using R2RML https://icdd.vm.rub.de/ontology/icdd/ExtendedDocument/#ExternalDatabase
+		- Features: Added AsSubgraph() extraction for container contents
+		- Bugfixes: Fixed several bugs (32 bugfix commits)
+	</releaseNotes>
+    <copyright>Copyright 2022</copyright>
+    <tags>dotnet icdd parser semanticweb dotnetrdf jsonld shacl</tags>
+    <repository type="git" url="https://git.inf.bi.ruhr-uni-bochum.de/icdd/core/library.git" branch="development" commit="8c813bd14ae7eb01cdaa3de38fffb61ab15ac19a" />
+	  <dependencies>
+		  <dependency id="dotNetRDF" version="2.7.5" />
+		  <dependency id="r2rml4net" version="0.7.1" />
+		  <dependency id="System.Data.SqlClient" version="4.8.3" />
+		  <dependency id="LibGit2Sharp" version="0.27.0-preview-0175" />
+		  <dependency id="Microsoft.Win32.Registry" version="5.0.0" />
+	  </dependencies>
+  </metadata>
+    <files>
+      <file src="icon.jpg" target="" />
+  </files>
+</package>

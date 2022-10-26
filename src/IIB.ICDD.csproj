@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>IIB.ICDD</RootNamespace>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>C:\Users\Philipp\source\repos\icdd\library\Icdd.Doc\doc.xml</DocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>IIB.ICDD</Title>
+  </PropertyGroup>
+	<PropertyGroup>
+    <NuspecFile>IIB.ICDD.nuspec</NuspecFile>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dotNetRDF" Version="2.7.5" />
+    <PackageReference Include="EWSoftware.SHFB" Version="2022.10.15" />
+    <PackageReference Include="EWSoftware.SHFB.NET" Version="5.0.0.2" />
+    <PackageReference Include="LibGit2Sharp" Version="0.27.0-preview-0175" />
+    <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
+    <PackageReference Include="r2rml4net" Version="0.7.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="icon.jpg">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="icon1.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
