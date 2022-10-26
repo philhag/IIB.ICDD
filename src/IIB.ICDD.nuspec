@@ -23,15 +23,15 @@
     <tags>dotnet icdd parser semanticweb dotnetrdf jsonld shacl</tags> 
 	  <dependencies>
 		  <dependency id="dotNetRDF" version="2.7.5" />
-		  <dependency id="r2rml4net" version="0.7.1" />
+		  <dependency id="r2rml4net" version="0.8.0" />
 		  <dependency id="System.Data.SqlClient" version="4.8.3" />
 		  <dependency id="LibGit2Sharp" version="0.27.0-preview-0175" />
 		  <dependency id="Microsoft.Win32.Registry" version="5.0.0" />
 	  </dependencies>
-    <readme>docs\readme.md</readme>
+    <readme>README.md</readme>
   </metadata>
     <files>
       <file src="icon.jpg" target="" />
-      <file src="..\README.md" target="docs\" />
+      <file src="..\README.md" target="" />
   </files>
 </package>
