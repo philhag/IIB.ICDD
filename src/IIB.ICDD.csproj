@@ -14,14 +14,12 @@
     <Title>IIB.ICDD</Title>
   </PropertyGroup>
 	<PropertyGroup>
-    <Version>0.9.9</Version>
-    <NuspecFile>IIB.ICDD.nuspec</NuspecFile>
+    <Version>0.9.10</Version>
+		<NuspecFile>IIB.ICDD.nuspec</NuspecFile>
 	</PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="dotNetRDF" Version="2.7.5" />
-    <PackageReference Include="EWSoftware.SHFB" Version="2022.10.15" />
-    <PackageReference Include="EWSoftware.SHFB.NET" Version="5.0.0.2" />
     <PackageReference Include="LibGit2Sharp" Version="0.27.0-preview-0175" />
     <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
     <PackageReference Include="r2rml4net" Version="0.7.1" />

@@ -14,10 +14,10 @@ namespace IIB.ICDD
     /// </summary>
     public class IcddContainerReader
     {
-        protected string File;
-        protected string Workfolder;
-        protected IcddContainerReaderOptions Options;
-        protected IcddValidator Validator;
+        internal string File;
+        internal string Workfolder;
+        internal IcddContainerReaderOptions Options;
+        internal IcddValidator Validator;
 
         /// <summary>
         /// Initializes a container reader from a filepath, optionally accepts IcddContainerReaderOptions
@@ -73,7 +73,7 @@ namespace IIB.ICDD
             Validator?.Validate();
             if (IsValid())
             {
-                return Validator.GetValidContainer();
+                return Validator?.GetValidContainer();
             }
             throw new IcddException("Container is invalid.");
         }
@@ -97,44 +97,4 @@ namespace IIB.ICDD
         }
 
     }
-
-    /// <summary>
-    /// Icdd Toolkit Library
-    /// Class:  IcddContainerReaderOptions 
-    /// (c) 2022 Philipp Hagedorn, Chair of Computing in Engineering, Ruhr-University Bochum, Germany
-    /// Mail: philipp.hagedorn-n6v@rub.de 
-    /// </summary>
-    public class IcddContainerReaderOptions
-    {
-        public string CustomWorkfolder;
-        public bool UseCustomWorkfolder;
-
-        public string CustomGuid;
-        public bool UseCustomGuid;
-
-        /// <summary>
-        /// Specifies container reader options wih a workfolder path
-        /// </summary>
-        /// <param name="workfolder"></param>
-        public IcddContainerReaderOptions(string workfolder)
-        {
-            UseCustomWorkfolder = true;
-            CustomWorkfolder = workfolder;
-        }
-        /// <summary>
-        /// Specifies container reader options wih a workfolder path and a predefined container guid that shall be applied to the container
-        /// </summary>
-        /// <param name="workfolder"></param>
-        /// <param name="guid"></param>
-        public IcddContainerReaderOptions(string workfolder, string guid)
-        {
-            UseCustomWorkfolder = true;
-            CustomWorkfolder = workfolder;
-
-            UseCustomGuid = true;
-            CustomGuid = guid;
-        }
-
-    }
-
 }

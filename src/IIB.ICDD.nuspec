@@ -7,7 +7,7 @@
     <authors>phagedorn</authors>
 	  <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <projectUrl>https://git.inf.bi.ruhr-uni-bochum.de/icdd/core/library</projectUrl>
+    <projectUrl>https://philhag.github.io/IIB.ICDD/</projectUrl>
     <icon>icon.jpg</icon>
     <description>The IIB.ICDD framework provides functions to open, create, validate, edit, export containers defined by ISO 21597-1:2020.</description>
     <releaseNotes>
@@ -19,8 +19,7 @@
 		- Bugfixes: Fixed several bugs (32 bugfix commits)
 	</releaseNotes>
     <copyright>Copyright 2022</copyright>
-    <tags>dotnet icdd parser semanticweb dotnetrdf jsonld shacl</tags>
-    <repository type="git" url="https://git.inf.bi.ruhr-uni-bochum.de/icdd/core/library.git" branch="development" commit="8c813bd14ae7eb01cdaa3de38fffb61ab15ac19a" />
+    <tags>dotnet icdd parser semanticweb dotnetrdf jsonld shacl</tags> 
 	  <dependencies>
 		  <dependency id="dotNetRDF" version="2.7.5" />
 		  <dependency id="r2rml4net" version="0.7.1" />

@@ -18,11 +18,17 @@ namespace IIB.ICDD
     /// </summary>
     public class IcddContainerWriter
     {
-        protected string FilePath;
-        protected bool Validate;
-        protected IcddValidator Validator;
-        private static readonly ReaderWriterLockSlim ReadWriteLock = new();
+        internal string FilePath;
+        internal bool Validate;
+        internal IcddValidator Validator;
+        internal static readonly ReaderWriterLockSlim ReadWriteLock = new();
 
+        /// <summary>
+        /// Initializes a new writer instance with a specified output path
+        /// </summary>
+        /// <param name="file"></param>
+        /// <param name="validate"></param>
+        /// <exception cref="ArgumentNullException"></exception>
         public IcddContainerWriter(string file, bool validate = false)
         {
             if (string.IsNullOrEmpty(file)) throw new ArgumentNullException();
@@ -32,6 +38,11 @@ namespace IIB.ICDD
         }
 
 
+        /// <summary>
+        /// Writes a container using the configuration of the IcddContainerWriter instance
+        /// </summary>
+        /// <param name="container"></param>
+        /// <exception cref="IcddException"></exception>
         public void Write(InformationContainer container)
         {
             ReadWriteLock.TryEnterWriteLock(10000);
